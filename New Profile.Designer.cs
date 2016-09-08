@@ -39,10 +39,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.phraseTextBox = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.phraseConfirmTextBox = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -70,10 +70,10 @@
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.phraseTextBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 5);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(541, 345);
+            this.tabPage3.Size = new System.Drawing.Size(541, 364);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -143,7 +143,6 @@
             // phraseTextBox
             // 
             this.phraseTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.phraseTextBox.Enabled = false;
             this.phraseTextBox.Location = new System.Drawing.Point(109, 140);
             this.phraseTextBox.Name = "phraseTextBox";
             this.phraseTextBox.Size = new System.Drawing.Size(320, 88);
@@ -163,6 +162,16 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(24, 297);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -191,16 +200,6 @@
             this.label6.Size = new System.Drawing.Size(101, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Re-enter the phrase";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(24, 297);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NewProfile
             // 
