@@ -21,7 +21,7 @@ namespace PasswordManager
                 foreach (var profile in _profiles)
                     profileSelect.Items.Add(profile.Name);
             else
-                profileSelect.Items.Add(new ListViewItem("No Profiles Found"));
+                profileSelect.Items.Add("No Profiles Found");
         }
 
         private void createProfileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace PasswordManager
                 foreach (var profile in _profiles)
                     profileSelect.Items.Add(profile.Name);
             else
-                profileSelect.Items.Add(new ListViewItem("No Profiles Found"));
+                profileSelect.Items.Add("No Profiles Found");
         }
 
         private void importProfileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace PasswordManager
                 foreach (var profile in _profiles)
                     profileSelect.Items.Add(profile.Name);
             else
-                profileSelect.Items.Add(new ListViewItem("No Profiles Found"));
+                profileSelect.Items.Add("No Profiles Found");
         }
 
         private void profileSelect_SelectedIndexChanged(object sender, EventArgs e)
@@ -213,7 +213,7 @@ namespace PasswordManager
             profileSelect.Items.Remove(profileSelect.SelectedItem);
                 
             if (profileSelect.Items.Count == 0)
-                profileSelect.Items.Add(new ListViewItem("No Profiles Found"));
+                profileSelect.Items.Add("No Profiles Found");
                 
             profileSelect.SelectedItem = profileSelect.Items[0];
             profileSelect_SelectedIndexChanged(new object(), new EventArgs());
