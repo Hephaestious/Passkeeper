@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using Newtonsoft.Json;
 
 namespace PasswordManager
@@ -123,15 +124,25 @@ namespace PasswordManager
 
         public static string GeneratePhrase()
         {
-            var r = new Random(DateTime.Now.Millisecond);
-
+            byte[] data = new byte[4];
             var lphrase = new List<string>();
-            var wordlist = Properties.Resources.wordlist.Split(new[] {Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries).ToList();
-            
+            var wordlist = Properties.Resources.wordlist.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            RNGCryptoServiceProvider rngCsp = new RNGCryptoServiceProvider();
             for (var i = 0; i < 12; i++)
-                lphrase.Add(wordlist[r.Next(wordlist.Count)]);
+            {
+                rngCsp.GetBytes(data);
+                int randomNum = BitConverter.ToInt32(data, 0);
+                int place = Mod(randomNum, wordlist.Count); 
+                lphrase.Add(wordlist[place]);
+            }
             
             return string.Join(" ", lphrase);
-        } 
+        }
+
+        public static int Mod(int x, int m)
+        {
+            int r = x % m;
+            return r < 0 ? r + m : r;
+        }
     }
 }
