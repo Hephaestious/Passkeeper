@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace PasswordManager
 {
-    public partial class NewProfile : Form
+    public partial class NewProfileForm : Form
     {
         private string Phrase = "";
         private string ProfileName = "";
         private string ProfilePassword = "";
-        public NewProfile()
+        public NewProfileForm()
         {
             InitializeComponent();
             Phrase = Database.GeneratePhrase();
             phraseTextBox.Text = Phrase;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void nextButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(profileNameInput.Text) && !string.IsNullOrEmpty(profilePasswordInput.Text))
             {
@@ -43,7 +43,7 @@ namespace PasswordManager
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void createButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(phraseConfirmTextBox.Text))
             {
@@ -65,7 +65,7 @@ namespace PasswordManager
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(tabPage3);
         }

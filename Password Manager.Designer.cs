@@ -1,6 +1,6 @@
 ﻿namespace PasswordManager
 {
-    partial class FrmMain
+    partial class PasswordManagerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -291,7 +291,7 @@
             this.Controls.Add(this.profileSelect);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FrmMain";
+            this.Name = "PasswordManagerForm";
             this.Text = "Password Manager";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

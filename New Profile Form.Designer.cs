@@ -1,6 +1,6 @@
 ﻿namespace PasswordManager
 {
-    partial class NewProfile
+    partial class NewProfileForm
     {
         /// <summary>
         /// Required designer variable.
@@ -34,13 +34,13 @@
             this.profilePasswordInput = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.phraseTextBox = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
             this.phraseConfirmTextBox = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -66,7 +66,7 @@
             this.tabPage3.Controls.Add(this.profilePasswordInput);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.nextButton);
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.phraseTextBox);
@@ -113,13 +113,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(446, 303);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Next";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.nextButton.Location = new System.Drawing.Point(446, 303);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.TabIndex = 3;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // label4
             // 
@@ -151,8 +151,8 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.backButton);
+            this.tabPage4.Controls.Add(this.createButton);
             this.tabPage4.Controls.Add(this.phraseConfirmTextBox);
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Location = new System.Drawing.Point(4, 5);
@@ -165,23 +165,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 297);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton.Location = new System.Drawing.Point(24, 297);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 3;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(438, 297);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Create";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.createButton.Location = new System.Drawing.Point(438, 297);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(75, 23);
+            this.createButton.TabIndex = 2;
+            this.createButton.Text = "Create";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // phraseConfirmTextBox
             // 
@@ -208,7 +208,7 @@
             this.ClientSize = new System.Drawing.Size(545, 370);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "NewProfile";
+            this.Name = "NewProfileForm";
             this.Text = "New Profile";
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -223,19 +223,19 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox phraseTextBox;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.RichTextBox phraseConfirmTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox profileNameInput;
         private System.Windows.Forms.TextBox profilePasswordInput;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton;
 
     }
 }
