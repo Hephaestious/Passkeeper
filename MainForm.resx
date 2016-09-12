@@ -138,4 +138,33 @@
   <data name="label1.Text" xml:space="preserve">
     <value>When you create a profile, you will be given a random 12 word phrase that is encrypted with your profile password. This phrase can be used to recover your accounts in case you lose the password manager files or delete your profile by accident. There are absolutely no connections to any external resource; passwords are able to be recovered due to the nature of how they are generated. You only need to remember your secret phrase and the combination of service name/username. You do not need your profile password or name for recovery, only the phrase.</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="importProfileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
 </root>
