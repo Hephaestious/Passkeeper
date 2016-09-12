@@ -15,9 +15,12 @@ namespace PasswordManager
         private string Phrase = "";
         private string ProfileName = "";
         private string ProfilePassword = "";
+        private Database.DBProfile newProfile;
+        public Profile NewProfile { get { return (newProfile == null) ? null : new Profile(newProfile); } }
         public NewProfileForm()
         {
             InitializeComponent();
+            newProfile = null;
             Phrase = Database.GeneratePhrase();
             phraseTextBox.Text = Phrase;
         }
@@ -49,7 +52,7 @@ namespace PasswordManager
             {
                 if (phraseConfirmTextBox.Text == Phrase)
                 {
-                    Database.CreateProfile(ProfileName, ProfilePassword, Phrase);
+                    newProfile = Database.CreateProfile(ProfileName, ProfilePassword, Phrase);
                     MessageBox.Show("Created profile");
                     Close();
                 }

@@ -9,12 +9,12 @@ namespace PasswordManager
 {
     public class Database
     {
-        public class Profile
+        public class DBProfile
         {
-            public Profile(string name, string phrasehash)
+            public DBProfile(string name, string phrasehash)
             {
                 Name = name;
-                PhraseHash = phrasehash;
+                EncryptedPhraseHash = phrasehash;
                 Accounts = new List<Account>();
             }
 
@@ -30,8 +30,8 @@ namespace PasswordManager
             [JsonProperty("Name")]
             public string Name { get; set; }
 
-            [JsonProperty("PhraseHash")] // Encrypted phrase hash
-            public string PhraseHash { get; set; }
+            [JsonProperty("EncryptedPhraseHash")] // Encrypted phrase hash
+            public string EncryptedPhraseHash { get; set; }
 
             [JsonProperty("Accounts")]
             public List<Account> Accounts { get; set; }
@@ -72,7 +72,7 @@ namespace PasswordManager
             return File.Exists(name + ".mpr");
         }
 
-        public static void CreateProfile(string profilename, string profilepassword, string phrase)
+        public static DBProfile CreateProfile(string profilename, string profilepassword, string phrase)
         {
             var passhash = Crypto.GenerateHash(profilepassword);
             var phrasehash = Crypto.GenerateHash(phrase);
@@ -80,17 +80,18 @@ namespace PasswordManager
             var json = new PhraseHashJson(phrasehash);
             var encryptedphrasehash = Crypto.EncryptStringAES(JsonConvert.SerializeObject(json), passhash);
 
-            var newProfile = new Profile(profilename, encryptedphrasehash); //create new profile object
+            var newProfile = new DBProfile(profilename, encryptedphrasehash); //create new profile object
             var text = Crypto.EncryptStringAES(JsonConvert.SerializeObject(newProfile), "b_@_51C-$33d");
 
             File.WriteAllText(profilename + ".mpr", text);
+            return newProfile;
         }
 
-        public static void SaveProfile(Profile profile)
+        public static void SaveProfile(DBProfile dbProfile)
         {
-            var text = Crypto.EncryptStringAES(JsonConvert.SerializeObject(profile), "b_@_51C-$33d");
+            var text = Crypto.EncryptStringAES(JsonConvert.SerializeObject(dbProfile), "b_@_51C-$33d");
 
-            File.WriteAllText(profile.Name + ".mpr", text);
+            File.WriteAllText(dbProfile.Name + ".mpr", text);
         }
 
         public static void DeleteProfile(string profilename)
@@ -98,23 +99,23 @@ namespace PasswordManager
             File.Delete(profilename + ".mpr");
         }
 
-        public static Profile GetProfile(string profilename)
+        public static DBProfile GetProfile(string profilename)
         {
             var encryptedProfile = File.ReadAllText(profilename + ".mpr");
             var json = Crypto.DecryptStringAES(encryptedProfile, "b_@_51C-$33d");
 
-            return JsonConvert.DeserializeObject<Profile>(json);
+            return JsonConvert.DeserializeObject<DBProfile>(json);
         }
 
-        public static Profile GetProfileByPath(string path)
+        public static DBProfile GetProfileByPath(string path)
         {
             var encryptedProfile = File.ReadAllText(path);
             var json = Crypto.DecryptStringAES(encryptedProfile, "b_@_51C-$33d");
 
-            return JsonConvert.DeserializeObject<Profile>(json);
+            return JsonConvert.DeserializeObject<DBProfile>(json);
         }
 
-        public static List<Profile> GetProfiles()
+        public static List<DBProfile> GetProfiles()
         {
             var paths = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.mpr");
             var profiles = paths.Select(GetProfileByPath).ToList();

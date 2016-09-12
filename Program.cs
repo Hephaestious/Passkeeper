@@ -14,9 +14,10 @@ namespace PasswordManager
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            Application.Run(new MainForm());
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PasswordManagerForm());
+            Application.Run(new PasswordManagerForm());*/
         }
     }
 }

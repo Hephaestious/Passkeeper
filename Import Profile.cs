@@ -12,6 +12,8 @@ namespace PasswordManager
 {
     public partial class Import_Profile : Form
     {
+        public Profile Profile { get { return new Profile(newDBProfile);} }
+        private Database.DBProfile newDBProfile;
         public Import_Profile()
         {
             InitializeComponent();
@@ -38,7 +40,7 @@ namespace PasswordManager
                         }
                         if (real)
                         {
-                            Database.CreateProfile(profileName, profilePassword, phrase);
+                            newDBProfile = Database.CreateProfile(profileName, profilePassword, phrase);
                             MessageBox.Show("Imported profile");
                             Close();
                         }

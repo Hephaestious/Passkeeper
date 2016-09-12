@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="addAccountButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="profileDeleteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsMAAALDAE/QCLIAAACyElEQVRYR+2Xz2sTQRTHUwSl
+        HjyoKC14U9IkW1BEm/2Zg6gVNLspjVLwpqg9qAcFfyI9CP5ADyI7k1rvSlE8CCrqwZOC9uDupNYff4CI
+        V1ERIX5fcNekdutmNjkIDQxkd+e995n33nxnN5Va+P1vGdC5v1tl4ovORW320Lh4Nnjt/ZKOrklj4qnB
+        xM6/gtRqXSoXUwYXemKAwvjblQh0Gisca8cgX+QzNhgZUDrbEZx8kC/yGRsgCBzb4B8TW/bXiQygeU/F
+        XlC7e4CC5yeqy2MDBBNRu4u6651o2fC3gc7EWZ3552XtU0QOiAuBA6VgH167eXBZo8Oc5ZxpvrbDZoPt
+        FdT/uDQAemEUq+AhgGkfTGvF3qaApj0Wda0y7yZ87JcGMHh1BFm4FQIYzt6MNbQuLgBs76i8OiwNoDNv
+        h8b8hyGAVSxlC/b6uAAowRNAbJUG0Cq+Cnl9ETjImc62nDHUJLW5eUqgu+KV6opN0gADrsjAyUwIgOAE
+        ETcDOvc+WHy6qWQtwZiVNz0a9z4GRpR+BWWYB6CrMSOq639W2etVLQVtnJy/+rxbdb1vwT1qQAWNGAWQ
+        zw93K5Yd6gay9yM7WV0sDUCGKve+B2d8n1nqUbAVowD6tjgrSCvo+cbxqaXQgK+JgpMxnHwamPBX038S
+        IazwWBQA0r8GYx89167P9DaWTxoEbz/vNOalyUG5XF6kWM65KIB+rZjOFpwReg4NyTY2sDQAOvmlUZke
+        +LMVo5UvYxU39JuOXc/ArC0sDYB9/BhZ2B4HgDRCsUp14SERgwg9kg4cGELNJrWK2BMHgIIHQlWXcebd
+        TgyA4/QGVhJ2PoIcaeoByzkaXBNARt+Vq5cAB5nmikpyAO5flnknAPhJjEuJAdBMh7Cd7rciKDQXZ8gD
+        g/kHEgOQGqIP7qEZf871MTLXPZqLd4G7Hf9ISby6BQfIwC/12e53JTondgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="Service.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Username.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PasswordColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DeleteColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>By default, only two variables are stored for each account: the name of the service the account is for and the username. No password is stored unless you use a custom one that was not created by the password manager, in which case you can not recover the password. When you request a password that was generated by the manager, the program calculates it using a hash of your secret phrase that must be decrypted with your profile password.</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>When you create a profile, you will be given a random 12 word phrase that is encrypted with your profile password. This phrase can be used to recover your accounts in case you lose the password manager files or delete your profile by accident. There are absolutely no connections to any external resource; passwords are able to be recovered due to the nature of how they are generated. You only need to remember your secret phrase and the combination of service name/username. You do not need your profile password or name for recovery, only the phrase.</value>
+  </data>
+</root>

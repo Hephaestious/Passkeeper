@@ -117,41 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="unlocked_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Actions-document-decrypt-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="importProfileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADOSURBVEhLzZTRDYMwDEQZoSN2E0bpSIzSESBX1WAOO3aEP4gUIRzzzjmTTFPdeDXU0ua7DnmQ
+        BL62EGapCMNLRTz4sMjH8DWCQwQ9SQ0ka5EsHHm/Mf+bI1uTp6zLO0SG4YAw2BNA/NvJF1v2yrlC7MQa
+        XgEch+cXuN6B15CMgAuvEOjC7wqgJ6Yt2g5uKlsVWWSdkxPjrgCfk0svKwS6IpGA93el448VSBeWTiRP
+        0t9JondVWF7rCzLsRfSfR+uhgK4mgvH6yK7DQp6XsAFdzceTs/G8HwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="escheresque_ste" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escheresque_ste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="closeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFcSURBVEhLzVXNSsQwEM5j+IeLz+CzKChevKssy3rw4OsoKII3UVn0PbwotSEkmaQ9eF5nCpU2
+        ZtOx3QULOZTMfN9MZuYbIRJfnufbADD9AHiZf7l583wCzPBugmcrhRG9U0rtZNbeh6CL/hXALQXDIrLe
+        H3OBQzvj3GGSBMrysi947YdPdh4l8db2jjwMypXlQYuE3nxo5KF/q/gZALug3ECkc9dVFlT9hU67otWa
+        UbuEjTFmXXjw02RUKZKOALAjzwT2+2tn2jEgRnZvUj6JTvB6gpuADPAal09ARAT8B3Ai+UcEfZ8oppS/
+        6tKzyO/GPFCbTlbVpigZJ4JGelWDprVeq6ZZAtyx2zVYPCm/H8GTUo6WTYAysdFSVFwWR8sigaLYi+4E
+        a+3FUBLt/Ti51YZkUgDss/YySbhy7oabjTL2CrPfZIE3jcgJJXece/8ckmVaP+L9aaX5ie8bLnQPQ6Nv
+        3DkAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="key_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="locked_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Actions-document-encrypt-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dark_dotted2_2X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dark_dotted2_@2X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_import1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wordlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\wordlist.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="dark_dotted2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dark_dotted2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_green_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_green_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key_add_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_add_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key_import_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_import_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createProfileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsMAAALDAE/QCLIAAABuklEQVRIS7WWzypFURTG73v4
+        dyRDKcnEUFHKBEkGBjIwut1CUUY8AM8gydRAhCkm4iHkAfwpfzLw/Wpt3bZzztrn3u6qr7tbe61v7dZe
+        +zu3Viu3TNvbwqXwLHwbWOPbEvocjtxtkk6EH+FG2BFmhDEDa3x3FnOs357UQksKfBdOhaGEpGHFnAlv
+        wqIXv66AD2HZC8zZX5HvU2gU5XJyyCdaIA8pU1ZkIeag57SllZPHXKtyvArdzRtcKD33bFABA16Q9i+E
+        oxCXacG0pFzogeKAZyPG2Usgc37rZdh+agHC74VNFjwYZjrFqhTYFeE5pLxKHk6KVSkwK8InSHn+vNDY
+        uNBAGH4f5QOxvz8nf1y+r7ICTEtKgX3FZWUFOtWiudCiTl3yXrhkJBdVTLEql/wgwg1IkQkeGqroGQXo
+        uWejxvkn4eg5kusZ05J3oXHetRyHzU4qoedIbru2JoIXoSsm4mOBnk+2UWFaucz+fBFHw4oguVWNk0Ne
+        9xL5WKDnSC6q6BkXemVtKTx5TMLHAj1nulBFhAtt4fkDHhFzzigSw4X+67l3MvbRcyQXVUS4aAFgjY85
+        L/038Qv8O2tSWu96pgAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
